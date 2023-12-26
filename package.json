@@ -1,0 +1,31 @@
+{
+  "name": "watermark-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenwong1991/watermark-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephenwong1991/watermark-js/issues"
+  },
+  "homepage": "https://github.com/stephenwong1991/watermark-js#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "rollup": "^4.9.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "tslib": "^2.6.2"
+  }
+}
