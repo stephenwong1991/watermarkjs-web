@@ -1,5 +1,5 @@
 {
-  "name": "watermark-js",
+  "name": "watermarkjs-web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephenwong1991/watermark-js.git"
+    "url": "git+https://github.com/stephenwong1991/watermarkjs-web.git"
   },
   "keywords": [
     "watermark"
@@ -17,9 +17,9 @@
   "author": "https://github.com/stephenwong1991",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stephenwong1991/watermark-js/issues"
+    "url": "https://github.com/stephenwong1991/watermarkjs-web/issues"
   },
-  "homepage": "https://github.com/stephenwong1991/watermark-js#readme",
+  "homepage": "https://github.com/stephenwong1991/watermarkjs-web#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
