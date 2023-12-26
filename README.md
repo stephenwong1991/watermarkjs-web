@@ -1,5 +1,24 @@
 # watermark
 
+## demo
+
+https://codesandbox.io/p/sandbox/watermarkjs-web-demo-33rpjh
+
+## use
+
+```
+npm i watermarkjs-web
+```
+
+```
+import Watermark from 'watermarkjs-web';
+
+new Watermark({
+  content:'重要资料请勿泄漏',
+  ...options
+});
+```
+
 ## options
 
 | 参数       | 说明             | 类型                | 默认值                     |
