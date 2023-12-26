@@ -11,8 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/stephenwong1991/watermark-js.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "watermark"
+  ],
+  "author": "https://github.com/stephenwong1991",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/stephenwong1991/watermark-js/issues"
