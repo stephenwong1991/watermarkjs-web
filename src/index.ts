@@ -50,7 +50,7 @@ class Watermark {
     this.listenEvent();
   }
 
-  private getTargetElement(): HTMLElement {
+  getTargetElement(): HTMLElement {
     if (typeof this.options.target === "string") {
       return (
         (document.querySelector(this.options.target) as HTMLElement) ||
@@ -65,7 +65,7 @@ class Watermark {
     return document.body;
   }
 
-  private generateWatermarkTile(): string {
+  generateWatermarkTile(): string {
     this.canvas = document.createElement("canvas");
     this.canvas.setAttribute("width", `${WATERMARK_TILE_WIDTH}px`);
     this.canvas.setAttribute("height", `${WATERMARK_TILE_HEIGHT}px`);
@@ -89,7 +89,7 @@ class Watermark {
     return this.canvas.toDataURL();
   }
 
-  private applyWatermark(): void {
+  applyWatermark(): void {
     const exists = this.isExistContainer();
 
     if (!exists) {
@@ -113,14 +113,14 @@ class Watermark {
     }
   }
 
-  private listenEvent() {
+  listenEvent(): void {
     const events = ["load", "resize"];
     events.forEach((event) => {
       window.addEventListener(event, () => this.applyWatermark(), false);
     });
   }
 
-  private generateContainerStyle(): string {
+  generateContainerStyle(): string {
     const rect = this.targetElement.getBoundingClientRect();
     const { left, top, width, height } = rect;
     const containerStyle = {
@@ -142,15 +142,15 @@ class Watermark {
     );
   }
 
-  private isExistContainer(): boolean {
+  isExistContainer(): boolean {
     return document.contains(this.container);
   }
 
-  private isDeleteWatermark(removedNodes: NodeList): boolean {
+  isDeleteWatermark(removedNodes: NodeList): boolean {
     return Array.from(removedNodes).includes(this.container as HTMLElement);
   }
 
-  private observe(): void {
+  observe(): void {
     this.observer = new MutationObserver((mutations) => {
       for (const mutation of mutations) {
         if (mutation.target === this.container) {

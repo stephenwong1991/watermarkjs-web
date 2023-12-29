@@ -1,8 +1,9 @@
 {
   "name": "watermarkjs-web",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.4",
+  "description": "add watermark for web",
   "main": "dist/bundle.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
