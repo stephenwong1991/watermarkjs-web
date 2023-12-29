@@ -1,6 +1,6 @@
 {
   "name": "watermarkjs-web",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "add watermark for web",
   "main": "dist/bundle.js",
   "types": "types/index.d.ts",

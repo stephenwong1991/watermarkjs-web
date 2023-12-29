@@ -14,13 +14,13 @@ declare class Watermark {
     private dataURL;
     private observer;
     constructor(options?: WatermarkOptions);
-    private getTargetElement;
-    private generateWatermarkTile;
-    private applyWatermark;
-    private listenEvent;
-    private generateContainerStyle;
-    private isExistContainer;
-    private isDeleteWatermark;
-    private observe;
+    getTargetElement(): HTMLElement;
+    generateWatermarkTile(): string;
+    applyWatermark(): void;
+    listenEvent(): void;
+    generateContainerStyle(): string;
+    isExistContainer(): boolean;
+    isDeleteWatermark(removedNodes: NodeList): boolean;
+    observe(): void;
 }
 export default Watermark;
